@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="101.694">
+    <testcase classname="F01_Login |" name="user login with standard_user" time="16.9">
+        <system-out><![CDATA[Given user click signIn button..............................................passed
+When user enter valid username "@sahar622"..................................passed
+And click on next button....................................................passed
+And enter password "Sahar123@"..............................................passed
+And Click on login button...................................................passed
+Then Validate that user login successfully..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F02_Submission |" name="User Write new Tweet" time="25.925">
+        <system-out><![CDATA[Given user click signIn button..............................................passed
+When user enter valid username "@sahar622"..................................passed
+And click on next button....................................................passed
+And enter password "Sahar123@"..............................................passed
+And Click on login button...................................................passed
+And user Write new post less than "280" characters..........................passed
+And click on Tweet button...................................................passed
+Then Validate that user post successfully...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F02_Submission |" name="User try to Write new Tweet contains more than 280 char" time="35.286">
+        <system-out><![CDATA[Given user click signIn button..............................................passed
+When user enter valid username "@sahar622"..................................passed
+And click on next button....................................................passed
+And enter password "Sahar123@"..............................................passed
+And Click on login button...................................................passed
+And user Write new post more than 280 characters............................passed
+And click on Tweet button...................................................passed
+Then Validate that user post successfully...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F02_Submission |" name="User try to Write new Tweet contains GIF" time="23.132">
+        <system-out><![CDATA[Given user click signIn button..............................................passed
+When user enter valid username "@sahar622"..................................passed
+And click on next button....................................................passed
+And enter password "Sahar123@"..............................................passed
+And Click on login button...................................................passed
+And user Write new post contains GIF........................................passed
+And click on Tweet button...................................................passed
+Then Validate that user post successfully...................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
